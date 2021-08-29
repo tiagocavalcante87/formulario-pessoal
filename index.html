@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Tela de cadastro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(6, 164, 255), rgb(17, 54, 71))
+        }
+
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 147, 7, 0.781);
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%;
+
+        }
+
+        fieldset {
+            border: 3px solid orange;
+
+        }
+
+        legend {
+            border: 1px solid orange;
+            padding: 10px;
+            text-align: center;
+            background-color: orange;
+            border-radius: 8px;
+        }
+
+        .inputbox {
+            position: relative;
+
+        }
+
+        .inputuser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid orange;
+            outline: none;
+            color: black;
+            font-size: 15px;
+            width: 100%
+        }
+
+        .labelinput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+
+        }
+
+        .inputuser:focus~.labelinput,
+        .inputuser:valid~.labelinput {
+            top: -20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b> Formulario de Cadastro</b></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" nome="nome" id="nome" class="inputuser" required>
+                    <label for="nome" class="labelinput">Nome Completo</label>
+
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" nome="cpf" id="cpf" class="inputuser" required>
+                    <label for="cpf" class="labelinput">Cpf</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" nome="rg" id="rg" class="inputuser" required>
+                    <label for="rg" class="labelinput">Rg</label>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="Sexo" value="feminino" required>
+                <label for="feminino">F</label>
+                <input type="radio" id="Masculino" name="Sexo" value="Masculino" required>
+                <label for="Masculino">M</label>
+                <br><br>
+
+                <div class="inputbox">
+                    <input type="text" name="endereco" id="endereco" class="inputuser" required>
+                    <label for="endereco" class="labelinput">Endereço</label>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <input type="text" name="numero" id="numero" class="inputuser" required>
+                    <label for="numero" class="labelinput">Numero</label>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <input type="text" name="bairro" id="bairro" class="inputuser" required>
+                    <label for="bairro" class="labelinput">Bairro</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                    <label for="cidade" class="labelinput">Cidade</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="estado" id="estado" class="inputuser" required>
+                    <label for="estado" class="labelinput">Estado</label>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <input type="text" name="cep" id="cep" class="inputuser" required>
+                    <label for="cep" class="labelinput">Cep</label>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="celular" id="celular" class="inputuser" required>
+                    <label for="celular" class="labelinput">Celular</label>
+
+                </div>
+                <br>
+
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+</body>
+</html>
